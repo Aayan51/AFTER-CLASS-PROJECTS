@@ -6,7 +6,7 @@
         <button onclick="ascending()">Ascending Order</button>
         <button onclick="descending()">Descending order</button>
         <script>
-            var numbers = [25, 12 ,19 , 94];
+            var numbers = [25, 12, 19, 94];
             function myFunction(num) {
                 return num * 50;
             }
@@ -14,15 +14,17 @@
             var newarray = numbers.map(myFunction);
             document.getElementById("product_value")
             .innerHTML = "The Mapped values are: " + newarray;
+
             function ascending() {
-                nearray.sort(function(a, b){return a - b});
+                newarray.sort(function(a, b) { return a - b; });
                 document.getElementById("product_value")
-                .innerHTML = "The Ascending order of mapped values are: "+newarray;
+                .innerHTML = "The Ascending order of mapped values are: " + newarray;
             }
+
             function descending() {
-                newarray.sort(function(a,b){return b - a});
+                newarray.sort(function(a, b) { return b - a; });
                 document.getElementById("product_value")
-                .innerHTML = "The Descending order of mapepd values are: "+newarray;
+                .innerHTML = "The Descending order of mapped values are: " + newarray;
             }
         </script>
     </body>
